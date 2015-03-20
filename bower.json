@@ -8,10 +8,10 @@
     "url": "https://github.com/kyleshay/DIM.git"
   },
   "dependencies": {
-    "angularjs": "~1.4.0-beta.5",
+    "angularjs": "~1.4.0-beta.6",
     "underscore": "~1.8.2",
     "ngDialog": "~0.3.12",
     "angular-native-dragdrop": "https://github.com/angular-dragdrop/angular-dragdrop.git",
-    "q": "1.1.2"
+    "angular-ui-router": "~0.2.13"
   }
 }

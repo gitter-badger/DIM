@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue Mar 17 2015 17:23:56 GMT-0500 (Central Daylight Time)
+// Generated on Thu Mar 19 2015 09:54:47 GMT-0500 (Central Daylight Time)
 
 module.exports = function(config) {
   config.set({
@@ -15,15 +15,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'vendor/angularjs/angular.js',
-      'vendor/angular-mocks/angular-mocks.js',
-      'vendor/underscore/underscore.js',
-      'vendor/angular-native-dragdrop/draganddrop.js',
-      'vendor/ngDialog/js/ngDialog.js',
-      'scripts/app.module.js',
-      'scripts/app.config.js',
-      'scripts/**/*.js',
-      'test/**/*-spec.js'
+      'app/scripts/*.js',
+      'app/scripts/**/*.js',
+      'test/**/**.spec.js'
     ],
 
 
@@ -63,11 +57,11 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS', 'Chrome'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true
+    singleRun: false
   });
 };
